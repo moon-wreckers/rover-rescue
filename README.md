@@ -52,31 +52,19 @@ It's recommended you use `screen` to start a screen session. This starts a kind 
 
 Now the rover should listen to both teleoperated commands or planned path commands. To teleoperate, turn on the corresponding PS4 controller, hold the R1 bumper button, and drive with the joysticks.
 
-
-
-Dependency:
-
-sudo apt-get install libusb-dev libspnav-dev libbluetooth-dev libcwiid-dev
-
-
-https://github.com/ros-planning/navigation
-https://github.com/MASKOR/maskor_navigation
-
-
-
-Using the DualShock4 (PS4) Gamepad
+# Using the DualShock4 (PS4) Gamepad
 If you plug in the adapter and turn on the gamepad with the PlayStation button and see a solid blue light, then the gamepad is connected and you can move on to start the ROS node.
 
-Pairing Instructions
+## Pairing Instructions
 Plug in a PS4 Wireless USB Adapter, notice the blue light on the tip. 
 Push the adapter in towards the computer until the blue light starts flashing.
 On the DuaShock4 Controller simultaneously press and hold the PlayStation button in the middle, and the SHARE button on the top right. It should blink in a heartbeat pattern, then quickly turn solid blue when connected with the adapter.
 
-ROS Instructions
+## ROS Instructions
 Once roscore is run on the master, ensure that ROS_IP and ROS_MASTER_URI are set then plug the USB dongle into your computer or the krawler and run roslaunch autokrawler teleop_gamepad.launch
 If that fails to publish to /ak1/cmd_vel then ensure that your controller is registered as /dev/input/js0 .
 
-Driving Instructions
+## Driving Instructions
 The top right bumper is the deadman switch, hold that down while driving. 
 Use the two joysticks to turn and drive.
 Use the right trigger as a boost mode, left trigger as a granny mode. 
