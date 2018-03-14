@@ -13,3 +13,6 @@
 [submodule "roverside_entrapment"]
 	path = roverside_entrapment
 	url = https://github.com/moon-wreckers/roverside_entrapment.git
+[submodule "teb_local_planner_tutorials"]
+	path = teb_local_planner_tutorials
+	url = https://github.com/moon-wreckers/teb_local_planner_tutorials.git
